@@ -1,0 +1,31 @@
+var timeAct=360; timeIni=360; timeBon=0;
+var successes=0; successesMax=5; attempts=0; attemptsMax=3;
+var score=0; scoreMax=5; scoreInc=1; scoreDec=1
+var typeGame=0;
+var tiTime=true;
+var tiTimeType=2;
+var tiButtonTime=true;
+var textButtonTime="Comenzar";
+var tiSuccesses=true;
+var tiAttempts=true;
+var tiScore=true;
+var startTime;
+var colorBack="#008080"; colorButton="#844265"; colorText="#000000"; colorSele="#FF8000";
+var goURLNext=false; goURLRepeat=false;tiAval=false;
+var scoOk=0; scoWrong=0; scoOkDo=0; scoWrongDo=0; scoMessage=""; scoPtos=10;
+var fMenssage="Verdana, Geneva, sans-serif";
+var fActi="Verdana, Geneva, sans-serif";
+var fEnun="Verdana, Geneva, sans-serif";
+var timeOnMessage=5; messageOk="BIENNN!!"; messageTime=""; messageError="LO INTENTASTE!!!"; messageErrorG="LO INTENTASTE!!!"; messageAttempts=""; isShowMessage=false;
+var urlOk=""; urlTime=""; urlError=""; urlAttempts="";
+var goURLOk="_blank"; goURLTime="_blank"; goURLAttempts="_blank"; goURLError="_blank"; 
+borderOk="#008000"; borderTime="#FF0000";borderError="#FF0000"; borderAttempts="#FF0000";
+var wordsGame="anVlZ29fYXJkb3Jh"; wordsStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+function giveZindex(typeElement){var valueZindex=0; capas=document.getElementsByTagName(typeElement);
+for (i=0;i<capas.length;i++){if (parseInt($(capas[i]).css("z-index"),10)>valueZindex){valueZindex=parseInt($(capas[i]).css("z-index"),10);}}return valueZindex;}
+var words=["RXMgbGEgdW5pZGFkIGLDoXNpY2EgZGUgbGEgdmlkYSwgY29uc3RpdHVpZGEgcG9yIG1lbWJyYW5hcyB5IG9yZ2FuZWxvcw==","Y29udGllbmUgbGEgaW5mb3JtYWNpw7NuIGdlbsOpdGljYSBkZSBsb3Mgb3JnYW5pc21vcw==","UHJvY2VzbyBtZWRpYW50ZSBlbCBjdWFsIGxhcyBlc3BlY2llcyBjYW1iaWFuIGEgbG8gbGFyZ28gZGVsIHRpZW1wbw==","VmFyaWVkYWQgZGUgZm9ybWFzIGRlIHZpZGEgZXhpc3RlbnRlcyBlbiBsYSBUaWVycmEsIGluY2x1eWVuZG8gbGEgZGl2ZXJzaWRhZCBnZW7DqXRpY2EgZGUgZXNwZWNpZXM=","UHJvY2VzbyBtZWRpYW50ZSBlbCBjdWFsIGxhcyBwbGFudGFzIHkgYWxndW5vcyBvcmdhbmlzbW9zIGNvbnZpZXJ0ZW4gbGEgZW5lcmfDrWEgc29sYXIgZW4gZW5lcmfDrWEgcXXDrW1pY2E="];imaW=["celula.jpg","adn.jpg","evo.jpg","bio.jpg","fotosintesis-trabajo-planta.jpg"];queW=["","","","",""];altW=["","","","",""];c=[69,50,67,97,104];
+var auW=["MQ==","Mg==","Mw==","NA==","NQ=="];
+var actMaxWidth="633"; actMaxHeight="348";indexG=0;profG=0;dirMedia="juego_ardora_resources/media/"; textBNext="NEXT";
+var wordsG=[];imageW=[];questionW=[];audioW=[];cG=[];alterW=[];
+colorText="#000000";colorButton="#0099FF";colorBack="#FFFFFF";colorSele="#DEEDFE";goURLNext=true;goURLRepeat=true;
+fMenssage="Verdana, Geneva, sans-serif";fActi="Verdana, Geneva, sans-serif";fEnun="Verdana, Geneva, sans-serif";

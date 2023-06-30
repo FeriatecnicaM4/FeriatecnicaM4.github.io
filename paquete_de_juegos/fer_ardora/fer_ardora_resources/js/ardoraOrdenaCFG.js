@@ -1,0 +1,31 @@
+var timeAct=360; timeIni=360; timeBon=0;
+var successes=0; successesMax=5; attempts=0; attemptsMax=3;
+var score=0; scoreMax=5; scoreInc=1; scoreDec=1
+var typeGame=0;
+var tiTime=true;
+var tiTimeType=0;
+var tiButtonTime=true;
+var textButtonTime="Comenzar";
+var tiSuccesses=true;
+var tiAttempts=true;
+var tiScore=true;
+var startTime;
+var colorBack="#800080"; colorButton="#91962F"; colorText="#000000"; colorSele="#FF8000";
+var goURLNext=false; goURLRepeat=false;tiAval=false;
+var scoOk=0; scoWrong=0; scoOkDo=0; scoWrongDo=0; scoMessage=""; scoPtos=10;
+var fMenssage="Verdana, Geneva, sans-serif";
+var fActi="Verdana, Geneva, sans-serif";
+var fEnun="Verdana, Geneva, sans-serif";
+var timeOnMessage=5; messageOk="felicidades"; messageTime="tiempo finalizado"; messageError="lo intentaste "; messageErrorG="lo intentaste "; messageAttempts="intentos agotados :c"; isShowMessage=false;
+var urlOk=""; urlTime=""; urlError=""; urlAttempts="";
+var goURLOk="_blank"; goURLTime="_blank"; goURLAttempts="_blank"; goURLError="_blank"; 
+borderOk="#008000"; borderTime="#FFFF00";borderError="#FF00FF"; borderAttempts="#00FF40";
+var wordsGame="ZmVyX2FyZG9yYQ=="; wordsStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+function giveZindex(typeElement){var valueZindex=0; capas=document.getElementsByTagName(typeElement);
+for (i=0;i<capas.length;i++){if (parseInt($(capas[i]).css("z-index"),10)>valueZindex){valueZindex=parseInt($(capas[i]).css("z-index"),10);}}return valueZindex;}
+var words=["TG9zIG1hcnN1cGlhbGVzIG5hY2VuIHBvciBib2xzYQ==","bG9zIHBsYWNlbnRhcmlvcyBuYWNlbiBwb3IgbWVkaW8gZGUgcGxhY2VudGE=","dG9kb3MgbG9zIHNlcmVzIGVzdGFuIGZvcm1hZG9zIHBvciBjZWx1bGFz","bGFzIGNlbHVsYXMgcHJvY2FyaW90YXMgc29uIG11eSBkaXZlcnNhcw==","dW4gZm9zaWwgZXMgdW5hIHBydWViYSBlbiBlbCBwYXNhZG8gZ2VvZ3JhZmljbyBkZSBsYSB0aWVycmE="];imaW=["ardora.jpg","placentero_ARDORA.jpg","tipos-de-celulas-del-cuerpo-humano_ardora.jpg","celula_procariota_ardora.jpg","fosil_ardora.jpg"];queW=["","","","",""];altW=["","","","",""];c=[31,44,42,40,59];
+var auW=["","","","",""];
+var actMaxWidth="629"; actMaxHeight="275";indexG=0;profG=0;dirMedia="fer_ardora_resources/media/"; textBNext="NEXT";
+var wordsG=[];imageW=[];questionW=[];audioW=[];cG=[];alterW=[];
+colorText="#000000";colorButton="#0099FF";colorBack="#FFFFFF";colorSele="#DEEDFE";goURLNext=true;goURLRepeat=true;
+fMenssage="Verdana, Geneva, sans-serif";fActi="Verdana, Geneva, sans-serif";fEnun="Verdana, Geneva, sans-serif";
